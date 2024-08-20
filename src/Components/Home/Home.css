@@ -1,0 +1,465 @@
+.home {
+    padding: -10px 20px;
+    background-color: #f9f9f9;
+}
+
+.differentiators {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.differentiators h2 {
+    margin-top: 40px;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.differentiators h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: #40A2E3;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    border-radius: 2px;
+}
+
+/* Adjusted styles for the icon circles and icons */
+.icon-circle {
+    width: 100px; /* Increase circle width */
+    height: 100px; /* Increase circle height */
+    font-size: 40px; /* Increase icon size */
+    border-radius: 50%;
+    background-color: #e0f7fa; /* Light color circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle i {
+    font-size: 40px; /* Ensure icon size matches circle */
+    color: #40A2E3;
+}
+
+.icon-item {
+    text-align: center;
+    max-width: 550px; /* Increase max-width to accommodate larger circles */
+    margin: 0 auto; /* Center the icon-item */
+}
+
+/* Ensure the parent container flex properties are adjusted for alignment */
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .differentiators {
+        margin: -45px; /* Reduce padding on smaller screens */
+    }
+
+    .differentiators h2 {
+        margin-top: 20px; /* Reduce top margin on smaller screens */
+        font-size: 28px; /* Adjust font size for smaller screens */
+        padding: 0; /* Remove horizontal padding on smaller screens */
+    }
+
+    .icons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-item {
+        margin-bottom: 30px; /* Add margin between items in column layout */
+    }
+
+    .icon-circle {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .icon-circle i {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .subheading {
+        font-size: 14px;
+    }
+}
+
+/* New styles for the image section */
+.image-section {
+    position: relative;
+    margin-top: 60px;
+    max-width: 100%;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.overlay-text h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.overlay-text p {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .overlay-text {
+        top: 40%; /* Adjust vertical position */
+        width: 85%; /* Adjust width for smaller screens */
+        padding: 10px;
+    }
+
+    .overlay-text h2 {
+        font-size: 36px;
+        margin-top: -50px;
+        padding: 13px;
+    }
+
+    .overlay-text p {
+        font-size: 18px; 
+        margin-top: -20px;
+        margin-left: 12px;
+    }
+}
+
+
+/* Styles for Our Services section */
+.our-services {
+    margin-top: 60px;
+    text-align: center;
+    color: #333;
+}
+
+.our-services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.our-services h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: #40A2E3;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    border-radius: 2px;
+}
+
+.services-text {
+    font-size: 16px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .services-text {
+        font-size: 16px; 
+        padding: auto;
+        margin: 20px;
+    }
+}
+
+/* Styles for the image and button under the Our Services section */
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.image-grid-item {
+    position: relative;
+    width: 30%;
+}
+
+.image-grid-item img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.button-on-image {
+    position: absolute;
+    bottom: 40px; /* Adjust this to place the button correctly on the image */
+    left: 70%; /* Center the button horizontally */
+    transform: translateX(-50%);
+    background-color: #40A2E3;
+    color: white;
+    padding: 12px 0; /* Remove side padding since we are using a fixed width */
+    width: 230px; /* Fixed width for all buttons */
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    transition: background-color 0.3s ease, padding-left 1s ease;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.button-on-image i {
+    margin-right: 10px;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.button-on-image:hover {
+    background-color: #555; /* Dark grey color on hover */
+    padding-left: 30px; /* Creates space for the icon to slide in */
+}
+
+.button-on-image:hover i {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .image-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-grid-item {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .button-on-image {
+        width: 100%; /* Adjust width to be responsive */
+        max-width: 200px; /* Keep the same max-width as desktop */
+        font-size: 14px;
+        padding: 10px 0;
+    }
+}
+
+
+/* Contact Us Horizontal section */
+
+.contact-box-horizontal {
+    background-color: #ffffff; /* Change card color to white */
+    padding: 40px;
+    border-radius: 10px;
+    color: #40A2E3; /* Set text color to blue */
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-box-horizontal .contact-form-container {
+    flex: 50%;
+}
+
+.contact-box-horizontal .info-container {
+    flex: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.contact-box-horizontal h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: black; /* Set heading color to blue */
+}
+
+.contact-box-horizontal p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: darkgrey; /* Set paragraph color to blue */
+}
+
+.contact-form-horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.form-group-horizontal {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-horizontal label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: black; /* Set label color to blue */
+}
+
+.form-group-horizontal input,
+.form-group-horizontal textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ffffff; /* Set input background to white */
+    color: #333333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to fields */
+}
+
+.form-group-horizontal input:focus,
+.form-group-horizontal textarea:focus {
+    outline: none;
+    border: 1px solid #40A2E3; /* Set border color on focus to blue */
+}
+
+.submit-button-horizontal {
+    background-color: #40A2E3; /* Set button background to blue */
+    color: #ffffff; /* Set button text color to white */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 50%; /* Set submit button width to 50% */
+    margin-left: 25%;
+}
+
+.submit-button-horizontal:hover {
+    background-color: #6c6e6f;
+    color: #ffffff;
+}
+
+.social-icons-horizontal {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons-horizontal h3 {
+    color: black; /* Set heading color above social icons to blue */
+    text-align: center;
+}
+
+.contact-box-horizontal .info-container h3 {
+    color: black; 
+    text-align: center;/* Set heading color in info container to blue */
+}
+
+.s-icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialicon-circle {
+    background-color: #ffffff; /* Set icon circle background to white */
+    color: #40A2E3; /* Set icon circle text color to blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.socialicon-circle i {
+    font-size: 20px;
+}
+
+.socialicon-circle:hover {
+    background-color: #6c6e6f;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .contact-box-horizontal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form-container,
+    .info-container {
+        margin-top: 10px;
+        flex: 100%;
+    }
+
+    .contact-form-horizontal {
+        
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+
+
+
+

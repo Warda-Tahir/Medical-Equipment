@@ -1,0 +1,93 @@
+/* src/components/Header.css */
+.header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: -30px;
+}
+.tagline-img {
+    height: 40px;
+    margin-left: -1px; 
+    margin-right: auto;
+}
+
+.contact-info {
+    display: flex;
+    gap: 50px;
+    font-size: 14px;
+    color: #40A2E3;
+}
+
+.phone, .address {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.phone .text, .address .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; /* Space between the icon and the text */
+}
+
+.phone-icon,
+.location-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #cfe9fb; /* Grey circle background */
+    color: #40A2E3; /* Icon color */
+}
+
+.phone-icon i,
+.location-icon i {
+    font-size: 16px; /* Adjust icon size if necessary */
+}
+
+.phone .gap {
+    margin-top: 5px; /* Adjust gap between phone numbers */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tagline-img {
+        display: none; /* Hide logo and tagline on smaller screens */
+    }
+
+    .contact-info {
+        font-size: 12px;
+        margin-top: -50px; 
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info {
+        font-size: 10px; /* Further reduce font size for very small screens */
+    }
+}

@@ -1,0 +1,149 @@
+.services-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.services-sidebar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.service-tab {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-tab:hover, .service-tab.active {
+    background-color: #40A2E3;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    object-fit: cover;
+}
+
+.services-text {
+    text-align: left;
+}
+
+.services-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/* New Styles for Spare Parts */
+.spare-parts-content {
+    text-align: center;
+}
+
+.spare-parts-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.spare-part-item {
+    width: 30%;
+    text-align: center;
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+
+.spare-part-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 10px;
+}
+
+.spare-part-info {
+    background-color: #f0f0f0; /* Grey background */
+    padding: 10px;
+    margin-top: -40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.spare-part-heading {
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.spare-part-subheading {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+.spare-parts-description {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .services-sidebar {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .services-content {
+        width: 100%;
+    }
+
+    .service-tab {
+        font-size: 14px;
+    }
+
+    .services-content p, .spare-parts-description {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .spare-parts-images {
+        flex-direction: column;
+    }
+
+    .spare-part-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,89 @@
+/* FeedbackPage.css */
+.feedback-page {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 60px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+.feedback-heading {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feedbacks {
+    width: 100%;
+}
+
+.feedback-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.feedback-author {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.feedback-text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.feedback-date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.feedback-actions {
+    display: flex;
+    align-items: center;
+}
+
+.like-button {
+    background-color: transparent;
+    border: none;
+    color: #40A2E3;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.like-button:hover .fa-heart {
+    color:  #40A2E3;
+}
+
+.fas.fa-heart {
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.fas.fa-heart.liked {
+    color: #e74c3c; /* Red color for liked */
+}
+
+.fas.fa-heart.not-liked {
+    color: #999; /* Grey color for not liked */
+    /* Removed outline */
+}

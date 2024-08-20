@@ -1,0 +1,207 @@
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-form-container {
+    flex: 1;
+    max-width: 70%;
+    margin-left: 50px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background to make the form stand out */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-subheading {
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: grey; /* Grey color for the placeholder text */
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.submit-button {
+    padding: 10px 15px;
+    background-color: #40A2E3;
+    color: #fff;
+    border: none;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: gray; /* Slightly darker shade on hover */
+}
+
+.contact-info-container {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px; 
+    margin-right: 50px;
+}
+
+
+.contact-info-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.social-icons-heading {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #40A2E3;
+    text-decoration: none;
+    font-size: 1.5rem; /* Adjust icon size */
+}
+
+.social-icons a:hover {
+    color: gray;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 40px;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start; /* Align items to the start (left) */
+    margin-left: 1px; /* Add left margin */
+    text-align: left; /* Ensure text is aligned to the left */
+}
+
+
+.info-item i {
+    font-size: 1.5rem; /* Adjust icon size */
+    color: #40A2E3;
+}
+
+.info-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        height: auto; /* Adjust height for content */
+    }
+
+    .contact-form-container, .contact-info-container {
+        max-width: 100%;
+        margin: 10px 0; /* Reduce margins for small screens */
+    }
+
+    .form-row {
+        flex-direction: column; /* Stack form fields vertically */
+    }
+
+    .form-group {
+        margin-right: 0; /* Remove right margin on small screens */
+    }
+
+    .submit-button {
+        width: 70%; /* Slightly larger button on small screens */
+    }
+
+    .company-info {
+        margin-left: 0; /* Remove extra margin on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .submit-button {
+        width: 80%; /* Increase width for better accessibility on very small screens */
+    }
+
+    .social-icons {
+        flex-direction: column; /* Stack social icons vertically */
+        gap: 10px;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem; /* Adjust icon size for small screens */
+    }
+}

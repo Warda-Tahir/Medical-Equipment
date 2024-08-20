@@ -1,0 +1,114 @@
+/* src/components/Slider.css */
+.slider {
+    position: relative;
+    width: 100%; /* Ensure the slider takes the full width */
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden; /* Hide overflow to only show one image at a time */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Container width is full width */
+}
+
+.slide-item {
+    flex: 0 0 100%; /* Each slide takes up 100% of the width */
+    height: 100%; /* Each slide takes up 100% of the height */
+    position: relative;
+}
+
+.slide-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the slide area */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%; /* Adjust width as needed */
+}
+
+.overlay h2 {
+    margin: 0;
+    font-size: 24px; /* Adjust as needed */
+}
+
+.overlay p {
+    margin: 10px 0;
+    font-size: 18px; /* Adjust as needed */
+}
+
+.overlay button {
+    background-color: #40A2E3; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.overlay button:hover {
+    background-color: #3182ce; /* Button hover color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .slider {
+        height: 300px; /* Reduce height on smaller screens */
+    }
+
+    .overlay {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: none; /* Remove max-width */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .overlay h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .overlay p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .overlay button {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        height: 250px; /* Further reduce height on very small screens */
+    }
+
+    .overlay {
+        width: 95%; /* Adjust width for very small screens */
+        padding: 10px; /* Adjust padding for very small screens */
+    }
+
+    .overlay h2 {
+        font-size: 18px; /* Adjust font size for very small screens */
+    }
+
+    .overlay p {
+        font-size: 14px; /* Adjust font size for very small screens */
+    }
+
+    .overlay button {
+        font-size: 12px; /* Adjust font size for very small screens */
+        padding: 6px 12px; /* Adjust padding for very small screens */
+    }
+}
