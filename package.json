@@ -1,9 +1,9 @@
 {
   "name": "medical_equipment",
   "private": true,
-  
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Warda-Tahir.github.io/Medical-Equipment-Reactjs-",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
