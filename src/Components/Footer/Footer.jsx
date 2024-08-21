@@ -22,9 +22,9 @@ const Footer = () => {
                 </div>
                 <div className="footer-column">
                     <h3>Contact Us</h3>
-                    <p>123 Street Name, City, Country</p>
-                    <p>Email: contact@example.com</p>
-                    <p>Phone: +123 456 7890</p>
+                    <p>26-Griffin Housing Scheme, Near Mughalpura, Lahore-Pakistan</p>
+                    <p>Email: contact@alrafay.com.pk</p>
+                    <p>Phone: 042-36882284</p>
                 </div>
             </div>
             <div className="footer-bottom">
