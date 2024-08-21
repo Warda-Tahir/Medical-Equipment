@@ -7,11 +7,11 @@ const Header = () => {
         <header className="header">
             <div className="container">
                 <div className="logo">
-                <img src="src/assets/1.jpg" alt="Logo" />
+                <img src="src/assets/logo.png" alt="Logo" />
                     <div className="logo-text">
                     </div>
                 </div>
-                <img src="src/assets/2.jpg" alt="Tagline" className="tagline-img"/>
+                <img src="src/assets/tagline.png" alt="Tagline" className="tagline-img"/>
                 <div className="contact-info">
                     <div className="phone">
                         <div className="phone-icon">
